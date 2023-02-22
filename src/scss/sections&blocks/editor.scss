@@ -1,12 +1,6 @@
 // стили для секции editor. верстает Алексей
 .editor {
     margin-bottom: 70px;
-    @include mini-between() {
-      margin-bottom: 98px;
-    }
-    @include before-mid() {
-      margin-bottom: 120px;
-    } 
     &__title {
         font-family: $main-font-family;
         text-transform: uppercase;
@@ -15,16 +9,6 @@
         font-size: 54px;
         line-height: 1;
         color: #635C73;
-        margin-left: auto;
-        margin-right: auto;
-        @include medium-between() {
-          max-width: 100%;
-          font-size: 42px;
-        } 
-        @include before-mid() {
-          font-size: 26px;
-          max-width: 75%;
-        }
     }
     &__text {
         font-family: $additional-font-family;
@@ -32,21 +16,34 @@
         line-height: 1.5;
         text-align: center;
         color: #323232;
-        margin: 25px auto 13px;
+        margin: 33px auto 15px;
+        margin-left: auto;
+        margin-right: auto;        
         max-width: 72%;
-        @include medium-between() {
-          font-size: 21px;
-          max-width: 100%;
-          margin-bottom: 22px;
-        }
-        @include before-mid() {
-          font-size: 14px;
-          max-width: 100%;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-bottom: 36px;
-        }
     }
+      @include before-large {
+        margin-bottom: 98px;
+        &__title {
+          font-size: 42px;
+        }
+        &__text {
+          margin-top: 31px;
+          margin-bottom: 26px;
+          max-width: 90%;
+        }        
+      }
+      @include before-mid {
+        margin-bottom: 88px;
+        &__title {
+          font-size: 26px;
+        }
+        &__text {
+          font-size: 14px;
+          margin-top: 25px;
+          margin-bottom: 34px;
+          max-width: 90%;
+        }
+      }    
     &__list {
         font-family: $main-font-family;
         font-weight: 700;
@@ -56,7 +53,6 @@
         gap: 20px 10px;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 88px;
       }
     &__link {
       color:#24292F;
@@ -83,5 +79,3 @@
       margin-left: 4px;
     }
 }
-
-
