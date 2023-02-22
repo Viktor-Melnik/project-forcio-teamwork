@@ -14,15 +14,15 @@ export const html = () => {
     .pipe(app.plugins.plumber(app.plugins.notify.onError())) 
      .pipe(fileinclude())
      .pipe(app.plugins.replace(/@img\//g, './dist/img/'))
-     .pipe(app.plugins.if(app.isProduct,
-          versionNumber({
-          'value': '%DT%',
-          'append': {
-            'key': '_v',
-            'cover': 0,
-            'to': ['css','js',]},
-          'output': { 'file': 'gulp/version.json'}
-          })))
+     // .pipe(app.plugins.if(app.isProduct,
+     //      versionNumber({
+     //      'value': '%DT%',
+     //      'append': {
+     //        'key': '_v',
+     //        'cover': 0,
+     //        'to': ['css','js',]},
+     //      'output': { 'file': 'gulp/version.json'}
+     //      })))
      .pipe(app.gulp.dest(app.path.dist.html))
      .pipe(app.plugins.browsersync.stream())
 }
