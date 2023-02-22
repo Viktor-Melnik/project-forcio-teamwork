@@ -4,3 +4,21 @@
     padding-top: 94px;
     padding-bottom: 33px;
 }
+
+.features__sidebar {
+    width: 45%;
+    float: right;
+    clear: both;
+    text-align: right;
+    .features__title {
+        text-align: left;
+        padding-left: 3.4%;
+    }
+    .features__img {
+        max-width: 100%;
+    }
+}
+
+.features-list {
+    width: 45%;
+}
