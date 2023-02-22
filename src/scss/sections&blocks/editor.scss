@@ -16,7 +16,7 @@
         line-height: 32px;
         text-align: center;
         color: #323232;
-        margin: 35px auto 13px;
+        margin: 25px auto 13px;
         max-width: 72%;
     }
     &__list {
@@ -30,29 +30,30 @@
         justify-content: center;
         margin-bottom: 88px;
       }
-      &__link {
-        display: flex;
-        align-items: center;
-        background-color: #f6f8fa;
-        border: 1px solid #d5d8da;
-        border-radius: 6px;
-        padding: 3px 10px;
-      }
-      &__link-svg {
-        height: 16px;
-        width: 16px;
-        filter: brightness(0) saturate(100%) invert(35%) sepia(18%) saturate(323%)
-          hue-rotate(171deg) brightness(98%) contrast(88%);
-      }
-      &__link-text {
-        margin-left: 8px;
-      }
-      &__link-number {
-        background-color: rgba(27, 31, 36, 0.08);
-        padding: 0 6px;
-        border-radius: 10px;
-        margin-left: 4px;
-      }
+    &__link {
+      color:#24292F;
+      display: flex;
+      align-items: center;
+      background-color: #f6f8fa;
+      border: 1px solid #d5d8da;
+      border-radius: 6px;
+      padding: 3px 10px;
+    }
+    &__link-svg {
+      height: 16px;
+      width: 16px;
+      filter: brightness(0) saturate(100%) invert(35%) sepia(18%) saturate(323%)
+        hue-rotate(171deg) brightness(98%) contrast(88%);
+    }
+    &__link-text {
+      margin-left: 8px;
+    }
+    &__link-number {
+      background-color: rgba(27, 31, 36, 0.08);
+      padding: 0 6px;
+      border-radius: 10px;
+      margin-left: 4px;
+    }
 }
 
 
