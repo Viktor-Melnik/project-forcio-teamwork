@@ -41,6 +41,13 @@ $screen-size_min: 320px;
     }
 };
 
+// до 480 
+@mixin before-mid() {
+    @media (max-width:$screen-size_small) {
+        @content
+    }
+};
+
 // от 320
 @mixin medium-max() {
     @media (min-width: $screen-size_min) {
