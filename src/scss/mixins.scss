@@ -47,3 +47,10 @@ $screen-size_min: 320px;
         @content
     }
 };
+
+@mixin btn-header() {
+    background-color: $sub-general-text-color;
+    color: $general-text-color;
+    font-weight: 700;
+    border-radius: 40px;
+}
