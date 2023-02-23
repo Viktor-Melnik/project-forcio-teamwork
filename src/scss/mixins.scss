@@ -48,9 +48,27 @@ $screen-size_min: 320px;
     }
 };
 
+// до 480 
+@mixin before-mid() {
+    @media (max-width:$screen-size_small) {
+        @content
+    }
+};
+
+// до 992 
+@mixin before-large() {
+    @media (max-width:$screen-size_medium-max) {
+        @content
+    }
+};
+
 @mixin btn-header() {
     background-color: $sub-general-text-color;
     color: $general-text-color;
     font-weight: 700;
     border-radius: 40px;
+    &:hover {
+        color: $sub-general-text-color;
+        background-color: $general-text-color;
+    }
 }

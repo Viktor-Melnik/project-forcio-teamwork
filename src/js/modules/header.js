@@ -1,2 +1,4 @@
 // логіка для секції header. Кодить Віктор
-console.log("test");
+document.querySelector(".main-header__burger").addEventListener("click", function() {
+    this.classList.toggle("main-header__burger--active");
+})
