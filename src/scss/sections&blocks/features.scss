@@ -4,15 +4,20 @@
     padding-top: 94px;
     padding-bottom: 23px;
     position: relative;
-    min-width: 100%;
     display: grid;
     grid-template-columns: minmax(406px, 38%) 51%;
-    column-gap: 50px;
+    column-gap: 49px;
     justify-content: end;
+    @media (min-width:1400px) {
+        justify-content: space-between;            
+    }
 }
 
 .features-sidebar {
-    justify-self: end;
+    justify-self: start;
+    @media (min-width:1400px) {
+        justify-self: end;    
+    }
     &__title {
         @include sections-title;
         font-size: calc( (100vw - 1220px)/(1380 - 1220) * (48 - 42) + 42px);
@@ -25,12 +30,15 @@
         margin-bottom: 19px;
     }
     &__img {
-        max-width: 100%;
+        max-width: 700px;
+        height: 89%;
+        overflow: hidden;
     }      
 }
 
 .features-list {
-    background-size: contain;
+    padding-left: 10px;
+    justify-self: start;
     &__item {
         display: grid;
         grid-template-columns: 22% 76%;
