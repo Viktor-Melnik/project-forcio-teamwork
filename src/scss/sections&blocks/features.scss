@@ -10,7 +10,7 @@
     grid-template-columns: minmax(406px, 40%) 53%;
     column-gap: 43px;
     justify-content: end;
-    @media (min-width:1600px) {
+    @media (min-width:1800px) {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         .features-sidebar {
