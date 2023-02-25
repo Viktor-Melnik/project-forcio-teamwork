@@ -25,6 +25,11 @@
             };
         }
     }
+    @media (min-width:1395px) {
+        .features-list {
+            align-self: center;
+        }        
+    }
 }
 
 .features-list {
@@ -46,6 +51,7 @@
         font-size: 14px;
         line-height: 1.5;
         color: #848E97;
+        max-width: 420px;
     }
     &__img {
         max-width: 100%;
