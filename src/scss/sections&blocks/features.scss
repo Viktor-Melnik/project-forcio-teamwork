@@ -26,36 +26,13 @@
     }
 }
 
-.features-sidebar {
-    justify-self: start;
-    @media (min-width:1372px) {
-        justify-self: end;    
-    }
-    &__title {
-        @include sections-title;
-        font-size: calc( (100vw - 1220px)/(1380 - 1220) * (48 - 42) + 42px);
-        @media (min-width:1600px) {
-            font-size: 54px;
-        }
-        color: $sub-general-text-color;
-        text-align: left;
-        padding-left: 3.4%;
-        margin-bottom: 19px;
-    }
-    &__img {
-        max-width: 700px;
-        height: 89%;
-        overflow: hidden;
-    }      
-}
-
 .features-list {
     padding-left: 10px;
     justify-self: start;
     &__item {
         display: grid;
         grid-template-columns: 22% 76%;
-        column-gap: 20px;
+        column-gap: 19px;
         margin-bottom: 34px;
     }
     &__title {
@@ -71,5 +48,62 @@
     }
     &__img {
         max-width: 100%;
+    }
+}
+
+.features-sidebar {
+    justify-self: start;
+    @media (min-width:1372px) {
+        justify-self: end;    
+    }
+    &__title {
+        @include sections-title;
+        font-size: calc( (100vw - 1220px)/(1380 - 1220) * (48 - 42) + 42px);
+        color: $sub-general-text-color;
+        text-align: left;
+        padding-left: 3.4%;
+        margin-bottom: 19px;
+        @media (min-width:1600px) {
+            font-size: 54px;
+        }        
+    }
+    &__img {
+        max-width: 700px;
+        height: 89%;
+        overflow: hidden;
+    }      
+}
+
+@include before-large {
+    .features {
+        padding-top: 155px;
+        grid-template-columns: 1fr;
+        background-color: #fff;
+        justify-content: center;
+    }
+    .features-list {
+        justify-self: center;
+        width: 94%;
+        max-width: 98vw;
+        &__item {
+            grid-template-columns: 111px minmax(50%, 83%);
+            justify-content: center;
+            margin-bottom: 55px;
+        }
+    }
+    .features-sidebar {
+        justify-self: end;
+        &__title {
+            width: 100%;
+            position: absolute;
+            top: 5%;
+            left: 0;            
+            padding-left: 0;
+            text-align: center;
+            font-size: calc( (100vw - 480px)/(768 - 480) * (42 - 34) + 34px);
+        }
+        &__img {
+            max-width: 91%;
+        }
     }
 }
