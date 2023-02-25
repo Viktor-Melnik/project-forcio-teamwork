@@ -73,3 +73,9 @@ $screen-size_min: 320px;
     }
 }
 
+@mixin sections-title() {
+    font-family: $main-font-family;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+}
