@@ -54,7 +54,7 @@
 
 .features-sidebar {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     justify-self: end;
     &__title {
         @include sections-title;
