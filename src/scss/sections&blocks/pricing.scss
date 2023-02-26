@@ -1,0 +1,14 @@
+.pricing {
+    background-image: url("@img/main-pricing-bg-1200.png");
+}
+
+.container {
+    border: 1px solid #000;
+}
+
+.pricing__title {
+    @include sections-title;
+    color: $general-text-color;
+    text-align: center;
+}
+
