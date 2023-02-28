@@ -17,7 +17,7 @@
             justify-self: center;
         }
         .features-list {
-            justify-self: center;
+            justify-self: end;
             align-self: center;
             &__item {
                 grid-template-columns: 120px 76%;
@@ -116,6 +116,53 @@
             height: auto;
             width: 700px;
             max-width: 100%;
+        }
+    }
+}
+
+@include before-mid {
+    .features {
+        display: block;
+        padding-top: 138px;
+        padding-bottom: 6px;
+    }
+    .features-list {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        &__title {
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        &__text {
+            font-family: $additional-font-family;
+            text-align: center;
+        }
+        &__img {
+            margin-bottom: 23px;
+        }
+    }
+    .features-sidebar {
+        &__title {
+            width: 82%;
+            top: 1.4%;
+            left: 50%;
+            transform:translate(-50%, 0);
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        &__img {
+            max-width: none;
+            width: 162%;
         }
     }
 }
