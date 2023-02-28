@@ -97,6 +97,9 @@
             justify-content: center;
             margin-bottom: 55px;
         }
+        &__text {
+            max-width: 100%;
+        }
     }
     .features-sidebar {
         justify-self: end;
