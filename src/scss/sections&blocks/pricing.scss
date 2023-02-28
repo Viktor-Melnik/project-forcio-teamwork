@@ -175,11 +175,6 @@
         row-gap: 18px;
         max-width: 100%;
     }
-    .pricing-card--accent {
-        max-width: 299px;
-        justify-self: center;
-        padding-bottom: 47px;
-    }
     .pricing-card {
         padding-bottom: 39px;
         margin: 0 auto;
@@ -223,4 +218,9 @@
             margin-bottom: 82px;
         }
     }
+    .pricing-card--accent {
+        max-width: 299px;
+        justify-self: center;
+        padding-bottom: 47px;
+    }    
 }
