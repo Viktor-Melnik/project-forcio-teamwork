@@ -9,7 +9,7 @@
 }
 
 .container {
-    border: 1px solid white;
+    border: 1px solid red;
 }
 
 .pricing__title {
@@ -22,7 +22,7 @@
 .pricing-cards {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     max-width: 1115px;
     column-gap: 1.3%;
     text-align: center;
@@ -70,6 +70,8 @@
     }
     &__period {
         margin-top: 3%;
+        font-size: 14px;
+        line-height: 1.14;
     }
     &__period--accent {
         margin-top: 3.4%;
@@ -81,7 +83,7 @@
         display: block;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.12;
     }
     &__description {
@@ -106,6 +108,10 @@
 }
 
 @include before-large() {
+    .pricing {
+        padding-top: 88px;
+        padding-bottom: 94px;
+    }
     .pricing__title {
         font-size: 42px;
     }
@@ -134,9 +140,6 @@
 }
 
 @media (max-width: 686px) {
-    .pricing__title {
-        // font-size: calc( (100vw - 481px)/(686 - 481) * (24 - 22) + 22px);
-    }
     .pricing-cards {
     grid-template-columns: 48% 48%;
     }
@@ -148,5 +151,76 @@
     }
     .pricing-card--accent {
         width: 100%;
+    }
+}
+
+@include before-mid {
+    .pricing {
+        padding-top: 14px;
+        padding-bottom: 39px;
+        background-image: none;
+        background-color: #4a394e;
+    }
+    .container {
+        min-width: 240px;
+    }    
+    .pricing__title {
+        font-size: 28px;
+        line-height: 2;
+        margin-bottom: 32px;
+    }
+    .pricing-cards {
+        grid-template-columns: minmax(80%, 299px);
+        justify-content: center;
+        row-gap: 18px;
+        max-width: 100%;
+    }
+    .pricing-card {
+        padding-bottom: 39px;
+        margin: 0 auto;
+        justify-self: center;
+        max-width: 257px;
+        &__title {
+            font-size: 24px;
+            line-height: 1;
+            padding: 36px 0;
+        }
+        &__description {
+            line-height: 1.75;
+            margin: 0;
+            margin-bottom: 34px;
+            padding: 0;
+        }
+        &__price {
+            margin-top: 30px;
+            margin-bottom: 68px;
+            line-height: 1;
+        }
+        &__period {
+            margin-top: 20px;
+        }
+        &__btn {
+            padding: 15px 37px;
+            margin: 0;
+        }
+        &__title--accent {
+            padding-top: 43px;
+            padding-bottom: 43px;
+        }
+        &__price--accent {
+            margin-top: 14px;
+            margin-bottom: 90px;
+        }
+        &__period--accent {
+            margin-top: 16px;
+        }
+        &__description--accent {
+            margin-bottom: 82px;
+        }
+    }
+    .pricing-card--accent {
+        max-width: 299px;
+        justify-self: center;
+        padding-bottom: 47px;
     }
 }
