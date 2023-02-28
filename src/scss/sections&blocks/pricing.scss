@@ -8,10 +8,6 @@
     }
 }
 
-.container {
-    border: 1px solid red;
-}
-
 .pricing__title {
     @include sections-title;
     color: $general-text-color;
@@ -61,12 +57,26 @@
         font-size: 60px;
         line-height: 1.5;
         font-weight: 700;
+        position: relative;
+    }
+    &__price::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 5px;
+        background-color: #8D81AC;
+        top:134%;
+        left: 50%;
+        transform:translate(-50%, 0);
     }
     &__price--accent {
         margin-top: 2.6%;
         margin-bottom: 34%;
         font-size: 82px;
         line-height: 1.1;
+    }
+    &__price--accent::after {
+        top: 146%;
     }
     &__period {
         margin-top: 3%;
