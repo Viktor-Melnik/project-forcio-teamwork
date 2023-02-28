@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const burger = document.querySelector(".main-header__burger");
 const nav = document.querySelector(".main-header__nav");
 
@@ -25,3 +26,5 @@ function viewport() {
         nav.classList.remove("main-header__nav--active");
     }
 }
+=======
+>>>>>>> testis
