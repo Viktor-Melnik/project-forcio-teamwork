@@ -7,11 +7,11 @@
   padding-bottom: 25.5px;
   text-align: center;
   @include before-large {
-    margin-top: 86px;
+    padding-top: 86px;
   }
   @include before-mid {
     background-image: url("@img/testmonials-bg2.jpg");
-    margin-top: 57px;
+    padding-top: 57px;
   }
 }
 
@@ -40,7 +40,6 @@
 
 .testimonials__list {
   display: grid;
-  // grid-template-columns: repeat(3, minmax(340px, 1fr));
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   align-items: flex-end;
   justify-items: center;
